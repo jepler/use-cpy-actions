@@ -5,6 +5,6 @@ jobs:
         name: do a thing, in a container
         steps:
             - name: step
-              uses: jepler/circuitpython-actions-build@HEAD
+              uses: jepler/circuitpython-actions-build@v1
               with:
                 run: uname -a
