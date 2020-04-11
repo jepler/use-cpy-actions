@@ -7,4 +7,4 @@ jobs:
             - name: step
               uses: jepler/circuitpython-actions-build@v1
               with:
-                run: uname -a; arm-none-eabi-gcc -v
+                run: uname -a; arm-none-eabi-gcc -v; riscv-unknown-elf-gcc --version
