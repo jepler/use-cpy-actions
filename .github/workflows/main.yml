@@ -7,4 +7,12 @@ jobs:
             - name: step
               uses: jepler/circuitpython-actions-build@v1
               with:
-                run: uname -a; arm-none-eabi-gcc -v; riscv-unknown-elf-gcc --version
+                run: uname -a; arm-none-eabi-gcc -v
+    job1:
+        runs-on: ubuntu-latest
+        name: do a thing, in a container
+        steps:
+            - name: step
+              uses: jepler/circuitpython-actions-build@v1
+              with:
+                run: riscv64-unknown-elf-gcc --version
